@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="580.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.ActivateSafetyProtocolController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="78.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Safety Protocol Process:" />
+      <Label alignment="CENTER" layoutX="268.0" layoutY="14.0" prefHeight="29.0" prefWidth="268.0" style="-fx-font-weight: bold; -fx-font-size: 24; -fx-text-fill: #228B22; -fx-background-color: white;" text="Activate Safety Protocol" />
+      <Label fx:id="SafetyProtocolProcessLabel" layoutX="14.0" layoutY="115.0" prefHeight="187.0" prefWidth="691.0" style="-fx-border-color: #228B22;" />
+      <Button layoutX="29.0" layoutY="14.0" mnemonicParsing="false" onAction="#backhomeOnAction" prefHeight="29.0" prefWidth="94.0" style="-fx-text-fill: #228B22;" text="&lt;&lt;" />
+      <Button layoutX="301.0" layoutY="312.0" mnemonicParsing="false" onAction="#ShowTheProcessOnAction" prefHeight="29.0" prefWidth="130.0" style="-fx-text-fill: #228B22;" text="Show The Process" />
+      <Label alignment="CENTER" layoutX="20.0" layoutY="357.0" prefHeight="29.0" prefWidth="165.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="CheckBox For The Verify Status:" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="403.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Brake" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="456.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Gate Sensor" />
+      <Label alignment="CENTER" layoutX="402.0" layoutY="403.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Light" />
+      <Label alignment="CENTER" layoutX="402.0" layoutY="456.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Fire Alarm" />
+      <CheckBox fx:id="Brakecheckbox" layoutX="239.0" layoutY="409.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="87.0" style="-fx-text-fill: #228B22;" text="Checked" />
+      <CheckBox fx:id="gatecheckbox" layoutX="239.0" layoutY="462.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="87.0" style="-fx-text-fill: #228B22;" text="Checked" />
+      <CheckBox fx:id="lightcheckbox" layoutX="601.0" layoutY="409.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="87.0" style="-fx-text-fill: #228B22;" text="Checked" />
+      <CheckBox fx:id="FireAlarmCheckBox" layoutX="601.0" layoutY="462.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="87.0" style="-fx-text-fill: #228B22;" text="Checked" />
+   </children>
+</AnchorPane>

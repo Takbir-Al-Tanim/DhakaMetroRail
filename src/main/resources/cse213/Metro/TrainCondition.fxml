@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="643.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TrainConditionController">
+   <children>
+      <Label alignment="CENTER" layoutX="41.0" layoutY="83.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Conform Train Condition :" />
+      <Label alignment="CENTER" layoutX="283.0" layoutY="31.0" prefHeight="29.0" prefWidth="198.0" style="-fx-font-weight: bold; -fx-font-size: 24; -fx-text-fill: #228B22; -fx-background-color: white;" text="Train Condition" />
+      <Label alignment="CENTER" layoutX="41.0" layoutY="189.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Brake" />
+      <Label alignment="CENTER" layoutX="41.0" layoutY="242.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Gate Sensor" />
+      <Label alignment="CENTER" layoutX="426.0" layoutY="180.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Engine" />
+      <Label alignment="CENTER" layoutX="41.0" layoutY="297.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Light" />
+      <Label alignment="CENTER" layoutX="426.0" layoutY="241.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="AC Condition" />
+      <Label alignment="CENTER" layoutX="428.0" layoutY="295.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Fire Alarm" />
+      <DatePicker fx:id="DatePicker" layoutX="190.0" layoutY="131.0" prefHeight="29.0" prefWidth="145.0" />
+      <Label alignment="CENTER" layoutX="41.0" layoutY="129.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Date:" />
+      <Button layoutX="55.0" layoutY="31.0" mnemonicParsing="false" onAction="#backhomeOnAction" prefHeight="29.0" prefWidth="94.0" style="-fx-text-fill: #228B22;" text="&lt;&lt;" />
+      <Button layoutX="592.0" layoutY="577.0" mnemonicParsing="false" onAction="#UbdateTheReportOnAction" prefHeight="29.0" prefWidth="138.0" style="-fx-text-fill: #228B22;" text="Update The report" />
+      <Label alignment="CENTER" layoutX="58.0" layoutY="353.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Show The Data:" />
+      <CheckBox fx:id="Brakecheckbox" layoutX="240.0" layoutY="195.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="87.0" style="-fx-text-fill: #228B22;" text="Checked" />
+      <CheckBox fx:id="gatecheckbox" layoutX="240.0" layoutY="248.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="87.0" style="-fx-text-fill: #228B22;" text="Checked" />
+      <CheckBox fx:id="lightcheckbox" layoutX="240.0" layoutY="303.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="87.0" style="-fx-text-fill: #228B22;" text="Checked" />
+      <CheckBox fx:id="FireAlarm" layoutX="649.0" layoutY="303.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="87.0" style="-fx-text-fill: #228B22;" text="Checked" />
+      <CheckBox fx:id="AcCheckBox" layoutX="649.0" layoutY="245.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="87.0" style="-fx-text-fill: #228B22;" text="Checked" />
+      <CheckBox fx:id="engineCheckBox" layoutX="649.0" layoutY="186.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="87.0" style="-fx-text-fill: #228B22;" text="Checked" />
+      <TableView fx:id="ConditionTableView" layoutX="68.0" layoutY="392.0" prefHeight="187.0" prefWidth="727.0">
+         <columns>
+            <TableColumn fx:id="datecolumn" prefWidth="217.0" text="Date " />
+            <TableColumn fx:id="CheckedPartsColumn" prefWidth="264.0" text="Checked Parts" />
+            <TableColumn fx:id="NoncheckedPartsColumn" prefWidth="245.0" text="Non Checked Parts" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
