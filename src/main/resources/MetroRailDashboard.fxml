@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="MetroRailDashboard"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="572.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MetroRailDashboard">
+   <children>
+      <Label layoutX="144.0" layoutY="10.0" opacity="0.71" prefHeight="54.0" prefWidth="330.0" text="Dhaka Metro Rail" textFill="#e10e0e">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="78.0" prefHeight="38.0" prefWidth="322.0" text="Please Select your prefarable option">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="bookticket" layoutX="59.0" layoutY="140.0" mnemonicParsing="false" onAction="#BookTicket" prefHeight="55.0" prefWidth="232.0" text="Book a ticket" textFill="#240202">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="trainschidule" layoutX="59.0" layoutY="217.0" mnemonicParsing="false" onAction="#ViewTrainSchidule" prefHeight="55.0" prefWidth="232.0" text="View Train Schedule">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancleticket" layoutX="59.0" layoutY="297.0" mnemonicParsing="false" onAction="#CancleTicket" prefHeight="55.0" prefWidth="232.0" text="Cancel Ticket">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="ballanceonmetro" layoutX="59.0" layoutY="381.0" mnemonicParsing="false" onAction="#CheckBallanceOnMetro" prefHeight="55.0" prefWidth="232.0" text="Check balance on metro card ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="rechargecard" layoutX="358.0" layoutY="140.0" mnemonicParsing="false" onAction="#RechargeMetroCard" prefHeight="55.0" prefWidth="232.0" text="Recharge Metro Card ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="enterstation" layoutX="358.0" layoutY="217.0" mnemonicParsing="false" onAction="#EnterMetroStation" prefHeight="55.0" prefWidth="232.0" text="Enter Metro Station">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitstation" layoutX="365.0" layoutY="297.0" mnemonicParsing="false" onAction="#ExitMetroStation" prefHeight="55.0" prefWidth="232.0" text="Exit Metro Station">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="feedback" layoutX="364.0" layoutY="386.0" mnemonicParsing="false" onAction="#PassangersFeedback" prefHeight="55.0" prefWidth="232.0" text="Feedback">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>
