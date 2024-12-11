@@ -9,7 +9,7 @@
 
 
 <AnchorPane
-        prefHeight="638.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.TaxPaymentRecordsController">
+        prefHeight="638.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.Controller.TaxPaymentRecordsController">
    <children>
       <Label alignment="CENTER" layoutX="247.0" layoutY="34.0" prefHeight="29.0" prefWidth="231.0" style="-fx-font-weight: bold; -fx-font-size: 24; -fx-text-fill: #228B22; -fx-background-color: white;" text="Tax Payment Records" />
       <Label alignment="CENTER" layoutX="40.0" layoutY="99.0" prefHeight="29.0" prefWidth="129.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Select Date Of records: :" />

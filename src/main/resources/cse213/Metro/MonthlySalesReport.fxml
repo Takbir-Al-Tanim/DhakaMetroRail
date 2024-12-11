@@ -8,15 +8,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="714.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.MonthlySalesReportController">
+<AnchorPane prefHeight="714.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.Controller.MonthlySalesReportController">
    <children>
       <Label alignment="CENTER" layoutX="265.0" layoutY="14.0" prefHeight="29.0" prefWidth="231.0" style="-fx-font-weight: bold; -fx-font-size: 24; -fx-text-fill: #228B22; -fx-background-color: white;" text="Monthly Sales Report" />
       <Label fx:id="SalesDataLabel" alignment="TOP_CENTER" layoutX="37.0" layoutY="86.0" prefHeight="196.0" prefWidth="432.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white; -fx-border-color: #228B22;" text="SeriesName,Category,ValueAdultTickets,&#10;January,200AdultTickets,&#10;February,150AdultTickets,&#10;March,300ChildTickets,&#10;January,100ChildTickets,&#10;February,200ChildTickets,March,250" />
       <Button layoutX="489.0" layoutY="92.0" mnemonicParsing="false" onAction="#ShowSalesDataOnAction" prefHeight="51.0" prefWidth="262.0" style="-fx-border-color: #228B22;" text="Show The Sales Data" />
       <Label alignment="CENTER" layoutX="37.0" layoutY="51.0" prefHeight="29.0" prefWidth="125.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Ticket Sales Data:" />
       <Button layoutX="533.0" layoutY="201.0" mnemonicParsing="false" onAction="#GenerateTheGraphOnAction" prefHeight="42.0" prefWidth="174.0" style="-fx-border-color: #228B22;" text="Generate The Graph" />
-      <LineChart fx:id="LineChart" layoutY="332.0" prefHeight="255.0" prefWidth="412.0" style="-fx-background-color: white; -fx-alternative-column-fill-visible: #228B22; -fx-alternative-row-fill-visible: #228B22;" title="Slaes% For Year 2024">
+      <LineChart fx:id="linechart" layoutY="332.0" prefHeight="255.0" prefWidth="412.0" style="-fx-background-color: white; -fx-alternative-column-fill-visible: #228B22; -fx-alternative-row-fill-visible: #228B22;" title="Slaes% For Year 2024">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>

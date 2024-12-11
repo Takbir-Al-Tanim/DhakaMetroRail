@@ -8,8 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="576.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.PayrollController">
+<AnchorPane prefHeight="576.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.Controller.PayrollController">
    <children>
       <Label alignment="CENTER" layoutX="275.0" layoutY="23.0" prefHeight="29.0" prefWidth="231.0" style="-fx-font-weight: bold; -fx-font-size: 24; -fx-text-fill: #228B22; -fx-background-color: white;" text="Payroll" />
       <Label alignment="CENTER" layoutX="50.0" layoutY="141.0" prefHeight="29.0" prefWidth="108.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Hours Worked:" />
@@ -25,7 +24,7 @@
       <DatePicker fx:id="paymentDateDatePicker" layoutX="182.0" layoutY="187.0" prefHeight="29.0" prefWidth="150.0" />
       <Label alignment="CENTER" layoutX="444.0" layoutY="187.0" prefHeight="29.0" prefWidth="108.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Payroll Amount:" />
       <Label fx:id="PayroolAmountTextField" layoutX="578.0" layoutY="187.0" prefHeight="29.0" prefWidth="150.0" style="-fx-border-color: #228B22;" />
-      <TableView fx:id="TableView" layoutX="56.0" layoutY="295.0" prefHeight="200.0" prefWidth="737.0">
+      <TableView fx:id="Tableview" layoutX="56.0" layoutY="295.0" prefHeight="200.0" prefWidth="737.0">
         <columns>
           <TableColumn fx:id="dateColumn" prefWidth="137.0" text="Date" />
             <TableColumn fx:id="employeeIdColumn" prefWidth="144.0" text="Employee Id" />

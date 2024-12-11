@@ -1,4 +1,8 @@
-package cse213.Metro;
+package cse213.Metro.Controller;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 
 public class TrainScheduleControler
 {

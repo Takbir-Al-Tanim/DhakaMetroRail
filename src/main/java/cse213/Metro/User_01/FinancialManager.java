@@ -3,6 +3,10 @@ package cse213.Metro.User_01;
 
 import cse213.Metro.User;
 
+import java.util.ArrayList;
+
+
+
 public class FinancialManager extends User {
     private String name;
     //-name: String
@@ -13,6 +17,7 @@ public class FinancialManager extends User {
     private String employeeID;
     private String type;
     private String email;
+
 
 
     public FinancialManager( String name, String password, String email, String phoneNumber,String type) {

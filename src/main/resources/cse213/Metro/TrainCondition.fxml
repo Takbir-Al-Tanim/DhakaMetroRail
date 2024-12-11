@@ -8,8 +8,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="643.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TrainConditionController">
+<AnchorPane prefHeight="643.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.Controller.TrainConditionController">
    <children>
       <Label alignment="CENTER" layoutX="41.0" layoutY="83.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Conform Train Condition :" />
       <Label alignment="CENTER" layoutX="283.0" layoutY="31.0" prefHeight="29.0" prefWidth="198.0" style="-fx-font-weight: bold; -fx-font-size: 24; -fx-text-fill: #228B22; -fx-background-color: white;" text="Train Condition" />
@@ -19,7 +18,6 @@
       <Label alignment="CENTER" layoutX="41.0" layoutY="297.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Light" />
       <Label alignment="CENTER" layoutX="426.0" layoutY="241.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="AC Condition" />
       <Label alignment="CENTER" layoutX="428.0" layoutY="295.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Fire Alarm" />
-      <DatePicker fx:id="DatePicker" layoutX="190.0" layoutY="131.0" prefHeight="29.0" prefWidth="145.0" />
       <Label alignment="CENTER" layoutX="41.0" layoutY="129.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Date:" />
       <Button layoutX="55.0" layoutY="31.0" mnemonicParsing="false" onAction="#backhomeOnAction" prefHeight="29.0" prefWidth="94.0" style="-fx-text-fill: #228B22;" text="&lt;&lt;" />
       <Button layoutX="592.0" layoutY="577.0" mnemonicParsing="false" onAction="#UbdateTheReportOnAction" prefHeight="29.0" prefWidth="138.0" style="-fx-text-fill: #228B22;" text="Update The report" />
@@ -37,5 +35,6 @@
             <TableColumn fx:id="NoncheckedPartsColumn" prefWidth="245.0" text="Non Checked Parts" />
          </columns>
       </TableView>
+      <DatePicker fx:id="datepicker" layoutX="189.0" layoutY="131.0" style="-fx-border-style: #228B22;" />
    </children>
 </AnchorPane>

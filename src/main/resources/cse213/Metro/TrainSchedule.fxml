@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="384.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.TrainScheduleControler">
+<AnchorPane prefHeight="384.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.Controller.TrainScheduleControler">
    <children>
       <Label alignment="CENTER" layoutX="23.0" layoutY="59.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Date:" />
       <Label alignment="CENTER" layoutX="26.0" layoutY="155.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Train Number:" />

@@ -1,9 +1,11 @@
 package cse213.Metro;
 
-public class User {
-    private String id, name, password, email, phoneNo,type;
+import java.io.Serializable;
 
-    public User(String name, String password, String email, String phoneNo,String type) {
+public class User implements Serializable {
+    private String id, name, password, email, phoneNo, type;
+
+    public User(String name, String password, String email, String phoneNo, String type) {
         this.name = name;
         this.password = password;
         this.email = email;
@@ -61,27 +63,46 @@ public class User {
                 ", phoneNumber='" + phoneNo + '\'' +
                 '}';
     }
-    public String generateId(String type){
-      String  id=" ";
 
-          id=this.type.substring(0,2);
-          id = this.name.substring(0, 3);
-          id += this.email.substring(0, 3);
-          id += this.phoneNo.substring(this.getPhoneNumber().length());
+    public String generateId(String type) {
+        if (type == null || name == null || email == null || phoneNo == null) {
+            return "INVALID";
+        }
+        if (!email.contains("@") || !email.contains(".")) {
+            return "INVALID_EMAIL";
+        }
+
+        if (!phoneNo.contains("+880") ) {
+            return "INVALID_PHONE";
+        }
+
+        int phoneLength = phoneNo.length();
+        if (phoneLength != 14) {
+                return "INVALID_PHONE_LENGTH";
+            }
 
 
 
-        return id;
-    }
-    public boolean loginVR(String id ,String password){
-        if(this.getId().equals(id) && this.getPassword().equals(password)){
+            String id = type.substring(0, Math.min(2, type.length())).toUpperCase();
+            id += email.substring(0, Math.min(7, email.length())).toUpperCase();
+
+
+            return id;
+        }
+
+
+    public boolean loginVR(String id, String password) {
+        if (this.getId().equals(id) && this.getPassword().equals(password)) {
             return true;
 
         }
         return false;
     }
 
+
 }
+
+
 
 
 

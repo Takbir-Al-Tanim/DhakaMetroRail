@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="580.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.ActivateSafetyProtocolController">
+<AnchorPane prefHeight="580.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.Controller.ActivateSafetyProtocolController">
    <children>
       <Label alignment="CENTER" layoutX="14.0" layoutY="78.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Safety Protocol Process:" />
       <Label alignment="CENTER" layoutX="268.0" layoutY="14.0" prefHeight="29.0" prefWidth="268.0" style="-fx-font-weight: bold; -fx-font-size: 24; -fx-text-fill: #228B22; -fx-background-color: white;" text="Activate Safety Protocol" />

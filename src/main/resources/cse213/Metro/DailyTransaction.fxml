@@ -11,7 +11,7 @@
 
 
 <AnchorPane
-        prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.DailyTransactionController">
+        prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.Controller.DailyTransactionController">
    <children>
       <Label alignment="CENTER" layoutX="45.0" layoutY="98.0" prefHeight="29.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Date:" />
       <TextField fx:id="transactiondescriptionTextField" layoutX="569.0" layoutY="144.0" prefHeight="29.0" prefWidth="186.0" style="-fx-border-color: #228B22;" />

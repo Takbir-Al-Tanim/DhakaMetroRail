@@ -9,8 +9,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="668.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.TaxPaymentController">
+<AnchorPane prefHeight="475.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.Metro.Controller.TaxPaymentController">
    <children>
       <Label alignment="CENTER" layoutX="237.0" layoutY="24.0" prefHeight="29.0" prefWidth="231.0" style="-fx-font-weight: bold; -fx-font-size: 24; -fx-text-fill: #228B22; -fx-background-color: white;" text="Tax Payment Process" />
       <Label alignment="CENTER" layoutX="30.0" layoutY="89.0" prefHeight="29.0" prefWidth="108.0" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #228B22; -fx-background-color: white;" text="Select Tax Type:" />
