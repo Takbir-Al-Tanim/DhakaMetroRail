@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="572.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MetroRailDashboard">
+<AnchorPane prefHeight="572.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MetroRailDashboardController">
    <children>
       <Label layoutX="144.0" layoutY="10.0" opacity="0.71" prefHeight="54.0" prefWidth="330.0" text="Dhaka Metro Rail" textFill="#e10e0e">
          <font>

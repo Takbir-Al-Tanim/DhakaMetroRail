@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class MetroRailDashboard {
+public class MetroRailDashboardController {
 
     @FXML
     private Button bookticket;

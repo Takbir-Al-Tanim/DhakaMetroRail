@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="454.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CancleTicketScene">
+   <children>
+      <Label layoutX="17.0" layoutY="16.0" prefHeight="36.0" prefWidth="183.0" text="Enter the Ticket Card Number " />
+      <TextField layoutX="210.0" layoutY="16.0" prefHeight="36.0" prefWidth="210.0" />
+   </children>
+</AnchorPane>

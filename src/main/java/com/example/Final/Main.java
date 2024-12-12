@@ -1,3 +1,5 @@
+package com.example.Final;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -7,10 +9,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // Load the main dashboard FXML file
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("MetroRailDashboard.fxml"));
 
-        // Set up the scene and stage
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("MetroRailDashboard.fxml"));
         Scene scene = new Scene(loader.load());
         primaryStage.setTitle("Dhaka Metro Rail");
         primaryStage.setScene(scene);
