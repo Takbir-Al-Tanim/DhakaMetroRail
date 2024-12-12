@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RechargeCardController">
+    <children>
+        <!-- Enter Metro Card Number -->
+        <Label layoutX="20.0" layoutY="20.0" text="Enter Metro Card Number:" />
+        <TextField fx:id="cardNumberField" layoutX="220.0" layoutY="20.0" prefWidth="200.0" />
+        <Button fx:id="validateCardButton" layoutX="440.0" layoutY="20.0" text="Enter" onAction="#validateCard" />
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="RechargeCardScene"
-            prefHeight="400.0" prefWidth="600.0">
+        <!-- Recharge Section -->
+        <Label layoutX="20.0" layoutY="80.0" text="Recharge Amount:" />
+        <ComboBox fx:id="rechargeAmountComboBox" layoutX="220.0" layoutY="80.0" prefWidth="200.0" />
+        <Button fx:id="rechargeButton" layoutX="440.0" layoutY="80.0" text="Recharge" onAction="#processRecharge" />
 
+        <!-- Payment Method -->
+        <Label layoutX="20.0" layoutY="140.0" text="Payment Method:" />
+        <ComboBox fx:id="paymentMethodComboBox" layoutX="220.0" layoutY="140.0" prefWidth="200.0" />
+        <Button fx:id="proceedPaymentButton" layoutX="440.0" layoutY="140.0" text="Enter" onAction="#proceedPayment" />
+
+        <!-- Account Credentials -->
+        <Label layoutX="20.0" layoutY="200.0" text="Account Number:" />
+        <TextField fx:id="accountNumberField" layoutX="220.0" layoutY="200.0" prefWidth="200.0" />
+
+        <Label layoutX="20.0" layoutY="260.0" text="Password:" />
+        <PasswordField fx:id="passwordField" layoutX="220.0" layoutY="260.0" prefWidth="200.0" />
+        <Button fx:id="confirmPaymentButton" layoutX="440.0" layoutY="260.0" text="Enter" onAction="#confirmPayment" />
+
+        <!-- Confirmation and Error Messages -->
+        <Label fx:id="confirmationMessageLabel" layoutX="20.0" layoutY="320.0" prefWidth="500.0" text="" />
+    </children>
 </AnchorPane>

@@ -30,7 +30,7 @@ public class BookTicketSceneController {
     @FXML
     private Label priceLabel;
 
-    private ObservableList<Train> availableTrains = FXCollections.observableArrayList();
+    private final ObservableList<Train> availableTrains = FXCollections.observableArrayList();
 
     // Initialize ComboBoxes and TableView
     public void initialize() {
