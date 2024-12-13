@@ -32,18 +32,15 @@ public class BookTicketSceneController {
 
     private final ObservableList<Train> availableTrains = FXCollections.observableArrayList();
 
-    // Initialize ComboBoxes and TableView
     public void initialize() {
         departureComboBox.setItems(FXCollections.observableArrayList("Station A", "Station B", "Station C"));
         destinationComboBox.setItems(FXCollections.observableArrayList("Station D", "Station E", "Station F"));
 
-        // Initialize TableView columns
         trainNameColumn.setCellValueFactory(new PropertyValueFactory<>("trainName"));
         trainTimeColumn.setCellValueFactory(new PropertyValueFactory<>("trainTime"));
         trainFareColumn.setCellValueFactory(new PropertyValueFactory<>("fare"));
     }
 
-    // Event Handler: Search Trains
     @FXML
     private void searchTrains(ActionEvent event) {
         availableTrains.clear();
@@ -54,8 +51,7 @@ public class BookTicketSceneController {
         trainTableView.setItems(availableTrains);
     }
 
-    // Event Handler: Calculate and Display Total Price
-    @FXML
+    FXML
     private void proceedPayment(ActionEvent event) {
         try {
             int ticketCount = Integer.parseInt(ticketCountField.getText());
@@ -65,11 +61,9 @@ public class BookTicketSceneController {
                 priceLabel.setText("Please select a train.");
                 return;
             }
-
             double totalPrice = ticketCount * selectedTrain.getFare();
             priceLabel.setText("Total Price: $" + totalPrice);
 
-            // Simulate payment process
             System.out.println("Payment of $" + totalPrice + " processed.");
             System.out.println("Enjoy your journey!");
         } catch (NumberFormatException e) {

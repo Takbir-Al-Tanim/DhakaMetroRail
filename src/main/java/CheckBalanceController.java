@@ -15,6 +15,7 @@ public class CheckBalanceController {
     private Button enterButton;
     @javafx.fxml.FXML
     private Label balanceLabel;
+    private javafx.event.ActionEvent actionEvent;
 
     @javafx.fxml.FXML
     public void exitProcedure(ActionEvent actionEvent) {
@@ -35,8 +36,10 @@ public class CheckBalanceController {
     }
 
     public void checkBalance(javafx.event.ActionEvent actionEvent) {
+        this.actionEvent = actionEvent;
     }
 
     public void checkBalance(javafx.event.ActionEvent actionEvent) {
+        this.actionEvent = actionEvent;
     }
 }
