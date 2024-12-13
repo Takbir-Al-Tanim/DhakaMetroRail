@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.CollaborationsController">
+   <children>
+      <Label layoutX="41.0" layoutY="93.0" text="Partner Name:" />
+      <TextField fx:id="NameField" layoutX="127.0" layoutY="89.0" />
+      <Label layoutX="321.0" layoutY="84.0" text="Objectives" />
+      <ComboBox fx:id="objectiveComBox" layoutX="391.0" layoutY="80.0" prefWidth="150.0" />
+      <Label layoutX="41.0" layoutY="143.0" text="Resource :" />
+      <ComboBox fx:id="resourceComboBox" layoutX="126.0" layoutY="139.0" prefWidth="150.0" />
+      <Label layoutX="336.0" layoutY="142.0" prefHeight="18.0" prefWidth="47.0" text="Budget" />
+      <TextField fx:id="BudgetTextField" layoutX="391.0" layoutY="138.0" />
+      <Button layoutX="333.0" layoutY="216.0" mnemonicParsing="false" onAction="#submitButtonOnAction" text="Submit" />
+      <Button layoutX="431.0" layoutY="216.0" mnemonicParsing="false" onAction="#CollabReaderButtonOnAction" text="CollaborationReader" />
+   </children>
+</AnchorPane>

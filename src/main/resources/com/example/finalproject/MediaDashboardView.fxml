@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.MediaDashboardViewController">
+   <top>
+      <AnchorPane prefHeight="57.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="66.0" layoutY="13.0" prefHeight="30.0" prefWidth="246.0" style="-fx-font-weight: bold; -fx-font-size: 18; -fx-text-fill: #228B22; -fx-background-color: white;" text="Media Director Dashboard" />
+            <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/profile-user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="426.0" prefWidth="169.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="2.0" layoutY="23.0" prefHeight="383.0" prefWidth="166.0" spacing="25.0">
+               <children>
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#AudienceReachbuttonOnAction" prefHeight="69.0" prefWidth="166.0" style="-fx-text-fill: #228B22; -fx-border-color: #228B22; -fx-background-color: white;" text="Audience Reach">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1" mnemonicParsing="false" onAction="#BudgetViewbuttonOnAction" prefHeight="37.0" prefWidth="177.0" style="-fx-text-fill: #228B22; -fx-border-color: #228B22; -fx-background-color: white;" text="Budget view">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button2" mnemonicParsing="false" onAction="#CollaborationsbuttonOnAction" prefHeight="37.0" prefWidth="177.0" style="-fx-text-fill: #228B22; -fx-border-color: #228B22; -fx-background-color: white;" text="Collaborations">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button3" mnemonicParsing="false" onAction="#CrisisCombuttonOnAction" prefHeight="37.0" prefWidth="177.0" style="-fx-text-fill: #228B22; -fx-border-color: #228B22; -fx-background-color: white;" text="Crisis Communication">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button4" mnemonicParsing="false" onAction="#MediaCamgainbuttonOnAction" prefHeight="37.0" prefWidth="177.0" style="-fx-text-fill: #228B22; -fx-border-color: #228B22; -fx-background-color: white;" text="media Campgain">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button5" mnemonicParsing="false" onAction="#MediaTrendsbuttonOnAction" prefHeight="37.0" prefWidth="177.0" style="-fx-text-fill: #228B22; -fx-border-color: #228B22; -fx-background-color: white;" text="Media Trends">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button6" mnemonicParsing="false" onAction="#RespondToInquiresbuttonOnAction" prefHeight="37.0" prefWidth="177.0" style="-fx-text-fill: #228B22; -fx-border-color: #228B22; -fx-background-color: white;" text="Inquires">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button7" mnemonicParsing="false" onAction="#ServiceUpdatebuttonOnAction" prefHeight="37.0" prefWidth="177.0" style="-fx-text-fill: #228B22; -fx-border-color: #228B22; -fx-background-color: white;" text="Service Update">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Line endX="183.79290771484375" endY="450.0" startX="183.7928924560547" startY="12.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="80.0" layoutY="211.0" prefHeight="62.0" prefWidth="329.0" style="-fx-text-fill: #228B22;" text="Welcome To Media Director Dashboard">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
