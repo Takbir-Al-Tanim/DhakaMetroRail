@@ -10,22 +10,22 @@ public class CheckBalanceController {
     @javafx.fxml.FXML
     private Button exitButton;
     @javafx.fxml.FXML
-    private Button checkBalanceButton;
-    @javafx.fxml.FXML
     private Button enterButton;
     @javafx.fxml.FXML
     private Label balanceLabel;
     private javafx.event.ActionEvent actionEvent;
-
     @javafx.fxml.FXML
+    private Button balanceButton;
+
+    @Deprecated
     public void exitProcedure(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void validateCard(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void checkBalance(ActionEvent actionEvent) {
     }
 
@@ -41,5 +41,23 @@ public class CheckBalanceController {
 
     public void checkBalance(javafx.event.ActionEvent actionEvent) {
         this.actionEvent = actionEvent;
+    }
+
+    @javafx.fxml.FXML
+    public void handleCheckBalance(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleCardNumberEnter(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleExit(ActionEvent actionEvent) {
+    }
+
+    public void handleCardNumberEnter(javafx.event.ActionEvent actionEvent) {
+    }
+
+    public void handleCheckBalance(javafx.event.ActionEvent actionEvent) {
     }
 }
