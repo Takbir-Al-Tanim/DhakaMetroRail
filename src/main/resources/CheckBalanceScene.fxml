@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckBalanceController">
-    <children>
-        <!-- Enter Metro Card Number -->
-        <Label layoutX="20.0" layoutY="20.0" text="Enter Metro Card Number:" />
-        <TextField fx:id="cardNumberField" layoutX="200.0" layoutY="20.0" prefWidth="200.0" />
-        <Button fx:id="enterButton" layoutX="420.0" layoutY="20.0" text="Enter" onAction="#validateCard" />
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="LeadershipController">
+    <VBox spacing="20" alignment="CENTER" layoutX="50" layoutY="50">
+        <TextField fx:id="userIdField" promptText="Enter User ID" />
+        <PasswordField fx:id="passwordField" promptText="Enter Password" />
+        <Button fx:id="loginButton" text="Login" onAction="#handleLogin" />
+        <Label fx:id="loginStatusLabel" text="Please login to continue." />
 
-        <!-- Check Balance Button -->
-        <Button fx:id="checkBalanceButton" layoutX="200.0" layoutY="80.0" text="Check Balance" onAction="#checkBalance" />
+        <Button fx:id="guidanceButton" text="Guidance" onAction="#handleGuidance" visible="false" />
+        <TextField fx:id="guidanceTextField" promptText="Write your guidance here..." visible="false" />
+        <Button fx:id="submitGuidanceButton" text="Submit Guidance" onAction="#handleSubmitGuidance" visible="false" />
+        <Label fx:id="thanksMessage" text="Thanks for your guidance!" visible="false" />
 
-        <!-- Display Current Balance -->
-        <Label layoutX="20.0" layoutY="140.0" text="Current Balance:" />
-        <Label layoutX="200.0" layoutY="140.0" text="-" >
-            <fx:fx :id>balanceLabel</fx:fx:id>
-        </Label>
-
-        <!-- Exit Button -->
-        <Button fx:id="exitButton" layoutX="200.0" layoutY="200.0" text="Exit" onAction="#exitProcedure" />
-    </children>
+        <Button fx:id="goalsButton" text="Complete Your Daily Goals" onAction="#handleDailyGoals" visible="false" />
+        <TextField fx:id="goalTextField" promptText="Write your daily goal..." visible="false" />
+        <Button fx:id="submitGoalButton" text="Submit Goal" onAction="#handleSubmitGoal" visible="false" />
+        <Label fx:id="goalCompletionMessage" text="Your daily goal submission is complete. Now go to your own field." visible="false" />
+    </VBox>
 </AnchorPane>

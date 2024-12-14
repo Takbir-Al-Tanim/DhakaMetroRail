@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="SmothEfficientOperationController">
+    <VBox spacing="20" alignment="CENTER" layoutX="50" layoutY="50">
+        <!-- Event 1: Login -->
+        <TextField fx:id="operatorIdField" promptText="Enter Operator ID" />
+        <PasswordField fx:id="operatorPasswordField" promptText="Enter Password" />
+        <Button fx:id="loginButton" text="Login" onAction="#handleLogin" />
+        <Label fx:id="loginStatusLabel" text="Please login to continue." />
+
+        <!-- Event 2: Dashboard -->
+        <AnchorPane fx:id="dashboardPage" visible="false">
+            <VBox spacing="20" alignment="CENTER" layoutX="50" layoutY="50">
+                <Label fx:id="trainScheduleLabel" text="Train Schedule: [Real-Time Data]" />
+                <Label fx:id="passengerLoadLabel" text="Passenger Load: [Real-Time Data]" />
+                <Label fx:id="realTimeUpdatesLabel" text="Real-Time Updates: [Updates]" />
+                <Button fx:id="adjustTrainFrequencyButton" text="Adjust Train Frequency" onAction="#handleAdjustTrainFrequency" />
+            </VBox>
+        </AnchorPane>
+
+        <!-- Event 3: Adjusting Train Frequencies -->
+        <AnchorPane fx:id="adjustFrequencyPage" visible="false">
+            <VBox spacing="20" alignment="CENTER" layoutX="50" layoutY="50">
+                <Label text="Adjust Train Frequency (Peak / Off-Peak Hours)" />
+                <TextField fx:id="trainFrequencyField" promptText="Enter new frequency" />
+                <Button fx:id="submitFrequencyButton" text="Submit Adjustment" onAction="#handleSubmitFrequency" />
+            </VBox>
+        </AnchorPane>
+
+        <!-- Event 4: Impact Feedback -->
+        <AnchorPane fx:id="feedbackPage" visible="false">
+            <VBox spacing="20" alignment="CENTER" layoutX="50" layoutY="50">
+                <Label fx:id="feedbackLabel" text="Adjustment Impact: Reduced Waiting Times" />
+                <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout" />
+            </VBox>
+        </AnchorPane>
+
+        <!-- Event 5: Logout -->
+        <Label fx:id="logoutMessage" text="You have successfully logged out." visible="false" />
+    </VBox>
+</AnchorPane>
