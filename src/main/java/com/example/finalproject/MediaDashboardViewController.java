@@ -46,7 +46,11 @@ public class MediaDashboardViewController
     }
 
     @javafx.fxml.FXML
-    public void MediaCamgainbuttonOnAction(ActionEvent actionEvent) {
+    public void MediaCamgainbuttonOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("MediaDirectorr/mediaCampaign/mediacampaignView.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage=(Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
 
 
     }
@@ -71,14 +75,25 @@ public class MediaDashboardViewController
 
     @javafx.fxml.FXML
     public void MediaTrendsbuttonOnAction(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
-    public void ServiceUpdatebuttonOnAction(ActionEvent actionEvent) {
+    public void ServiceUpdatebuttonOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("MediaDirectorr/ServiceUpdate/update.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage=(Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
+
     }
 
     @javafx.fxml.FXML
-    public void RespondToInquiresbuttonOnAction(ActionEvent actionEvent) {
+    public void RespondToInquiresbuttonOnAction(ActionEvent actionEvent) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("MediaDirectorr/RespondToInquiries/Inquiries.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage=(Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
     }
 
     @javafx.fxml.FXML

@@ -1,4 +1,4 @@
-/*
+
 package com.example.finalproject;
 
 import javafx.event.ActionEvent;
@@ -79,4 +79,4 @@ public class CrisisController implements Serializable
 
 
     }
-}*/
+}
